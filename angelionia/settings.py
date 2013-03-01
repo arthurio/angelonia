@@ -1,4 +1,4 @@
-# Django settings for angelionia project.
+# Django settings for chalet project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -106,7 +106,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'chalet.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'wsgi.application'
+WSGI_APPLICATION = 'chalet.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
