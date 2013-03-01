@@ -4,7 +4,7 @@ from django.conf.urls import patterns, url
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('angelionia.views',
+urlpatterns = patterns('chalet.views',
     (r'^$', 'home'),
     (r'^gallery$', 'gallery'),
     (r'^pricing$', 'pricing'),
