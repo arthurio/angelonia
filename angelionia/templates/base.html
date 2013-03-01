@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-fr" lang="fr-fr" dir="ltr">
+<head>
+  <title>Chalet Epinette</title>
+  <!-- loading the fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:100,900" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic" rel="stylesheet" type="text/css">
+  <link rel="icon"
+      type="image/png"
+      href="{{ STATIC_URL }}images/chalet.ico">
+      <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.7.min.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.placeholder.min.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/slider.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.8.18.custom.min.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/application.js"></script>
+</head>
+<body class="font-open-sans">
+
+    <div id="banner" class="font-lato">
+        <div class="inner">
+            <h1 class="float">Chalet Épinette</h1>
+            <div id="nav">
+                <ul>
+                    <li class="home" data-href="/">Accueil</li>
+                    <li class="photos" data-href="gallery">Photos</li>
+                    <li class="tarifs" data-href="pricing">Tarifs/Réservation</li>
+                    <li class="contact" data-href="contact">Contact</li>
+                </ul>
+            </div>
+        </div>
+        <span class="under-banner"></span>
+    </div>
+    <div id="content">
+        <div class="wrapper">
+            <div class="inner midd">
+                <div class="overlay-white-7">
+                </div>
+                <div class="content font-open-sans">
+                    {% block content %}
+                    {% endblock content %}
+                </div>
+                <div class="footer font-lato">
+                    <ul>
+                        <li class="float">&copy;</li>
+                        <li class="float">2012</li>
+                        <li class="float">-</li>
+                        <li class="float"><a href="http://www.arthur-rio.fr" target="_blank">Arthur Rio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,490 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *
+ *= require jquery.ui.all
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+    /*background: url(../images/IMGP2793.jpg);*/
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    background-image: url(../images/background/background.jpg);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+/* Clearfix */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix { display: inline-block; }
+/* Hide from IE Mac \*/
+.clearfix { display: block; }
+/* End hide from IE Mac */
+.none { display: none; }
+/* End Clearfix */
+.clear{
+    clear: both
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.float-right {
+    float: right;
+}
+
+.float {
+    float: left;
+}
+
+.overlay-white-7 {
+    background-color: #FFF;
+    filter: alpha(opacity=80);
+    -khtml-opacity: .8;
+    -moz-opacity: .8;
+    opacity: .8;
+}
+
+.center {
+    text-align: center;
+}
+
+/* DATEPICKER */
+div.ui-datepicker {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+    text-align: center !important;
+}
+
+/* FORMS */
+button, input, select, textarea {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+button[type=submit] {
+    color: #FFF;
+    background: #B98C3A;
+}
+
+button:hover {
+    background: #A87A26;
+    -webkit-transition: ease-in-out .4s;
+    -moz-transition: ease-in-out .4s;
+    -o-transition: ease-in-out .4s;
+    -ms-transition: ease-in-out .4s;
+    transition: ease-in-out .4s;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"],textarea {
+    padding:7px;
+    border-radius:3px;
+
+}
+input[type="text"], input[type="password"],input[type="email"], input[type="url"], textarea {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px rgba(0,0,0,.1);
+}
+textarea {
+    padding: 10px;
+    border-radius: 3px;
+    color: #999;
+    margin: 5px 0;
+    resize: vertical;
+}
+
+textarea.autoresize {
+    height: 1.2em;
+}
+
+input:focus {
+
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.required {
+    background: none repeat scroll 0 0 #FFD1DA !important;
+    border: 1px solid #AF0022 !important;
+    color: #AF0022 !important;
+    box-shadow: 2px 2px rgba(175, 0, 34, .5) !important;
+}
+
+.asterisk {
+    font-size: 12px;
+    display: inline;
+    padding: 0 2px;
+    color: #C11B17;
+}
+
+/* END FORMS */
+
+/* TABLES */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td {
+    vertical-align: top;
+}
+table td p {
+    margin: 0;
+}
+tr {
+    border-top:1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+table {
+    width: 800px;
+    margin: auto;
+}
+table th, table td {
+    padding: 5px;
+    text-align: left;
+    background: #f5f5f5;
+    font-size: 12px;
+    vertical-align: middle;
+}
+table th {
+    color: #FFF;
+    background: url(../images/textures/banner-bg.png) repeat scroll 0 0;
+}
+
+table tr.even td, table tr:nth-child(even) td {
+    background: #fff;
+}
+table tr td {
+    line-height: 18px;
+}
+table tr:hover td {
+    background: #FDFFEA;
+}
+ /* END TABLES */
+
+/* FONTS */
+
+.font-gentium-book {
+    font: 400 16px/24px "gentium book basic";
+}
+
+.font-open-sans, .font-open-sans textarea {
+    font: 400 16px/24px "open sans";
+}
+
+.font-lato {
+    font: 200 20px/24px "lato";
+}
+
+.font-lato h1, .font-lato h2, .font-lato h3, .font-lato h4 {
+    font-weight: 200;
+}
+
+.font-old-standard {
+    font: 400 20px/24px "old standard tt";
+}
+
+.font-open-sans p {
+    font-weight: 400;
+}
+
+/* BANNER */
+
+#banner {
+    color: #FFF;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    min-width: 980px;
+    z-index: 2;
+}
+
+#banner h1 {
+    font-size: 2.4em;
+    line-height: 62px;
+    margin: 10px 0;
+}
+
+#banner .inner {
+    width: 970px;
+    margin: auto;
+    background: url(../images/textures/banner-bg.png) repeat scroll 0 0;
+    height: 80px;
+    padding: 10px 0 10px 10px;
+}
+
+/* NAV */
+
+#nav {
+    float: right;
+    margin-top: 40px;
+    background: #B98C3A;
+}
+
+#nav ul, #nav ol {
+    margin: 0;
+    padding: 0;
+}
+
+#nav li {
+    cursor: pointer;
+    float: left;
+    color: #FFF;
+    padding: 10px 20px;
+    margin-bottom: 0;
+}
+
+#nav li:hover {
+    background: #A87A26;
+    -webkit-transition: ease-in-out .3s;
+    -moz-transition: ease-in-out .3s;
+    -o-transition: ease-in-out .3s;
+    -ms-transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
+}
+
+#nav li.active {
+    background: #A87A26;
+}
+
+/* CENTER */
+
+.wrapper {
+    background-image: url(../images/background/dark_bg.png);
+    margin: 0 auto;
+    width: 980px;
+    padding: 0 30px 0 30px;
+}
+
+.midd {
+    color: #000;
+    min-height: 735px;
+    width: 980px;
+    padding: 120px 0 0 0;
+    position: relative;
+}
+
+.midd .overlay-white-7 {
+    height: 100%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    margin-top: -120px;
+}
+
+.content {
+    padding: 0 20px;
+    min-height: 620px;
+}
+
+/* CAROUSSEL */
+
+#caroussel {
+    width: 925px;
+    margin: auto;
+}
+
+/* Specific to slider.js */
+.slider, .slide {
+    width: 925px;
+    height: 275px;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 275px;
+}
+/* end here */
+
+#caroussel .slider a {
+    z-index: -2;
+}
+
+#caroussel .previous {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#caroussel .next {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+#caroussel .break {
+    position: absolute;
+    left: 10px;
+    top: 130px;
+}
+
+
+/* CONTACT */
+
+#contact li.label {
+    padding: 7px 0;
+    height: 26px;
+}
+
+#contact li.input {
+    width: 330px;
+}
+
+#contact li input {
+    float: right;
+    width: 280px;
+}
+
+#contact li input.start-date {
+    margin-right: 4px;
+}
+
+#contact li.separator.border {
+    border-top: 2px solid #B98C3A;
+    margin: 15px 0;
+}
+
+#contact textarea {
+    width: 580px;
+    height: 165px;
+}
+
+#contact li.input.date input {
+    cursor: pointer;
+    width: 130px;
+}
+
+#contact p {
+    margin: 0;
+}
+
+#contact .form {
+    width: 600px;
+    margin: 10px auto;
+    border: 2px solid #B98C3A;
+    border-radius: 5px;
+    padding: 20px;
+    background: #E8DFCF;
+}
+
+#contact img.error {
+    margin: 9px;
+}
+/* END CONTACT */
+
+/* FOOTER */
+
+div.footer {
+    margin-top: 50px;
+    color: #FFF;
+    background: url(../images/textures/banner-bg.png) repeat scroll 0 0;
+    overflow: hidden;
+}
+
+div.footer ul {
+    overflow: hidden;
+    margin: 10px auto;
+    width: 200px;
+}
+
+div.footer ul li {
+    margin-left: 10px;
+}
+
+div.footer a:hover {
+    color: #B98C3A;
+    -webkit-transition: ease-in-out .3s;
+    -moz-transition: ease-in-out .3s;
+    -o-transition: ease-in-out .3s;
+    -ms-transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
+}
+
+/* END FOOTER */
+
+/* TARIFS */
+
+td.hs {
+    color: #CD2626;
+}
+
+td.bs {
+    color: #B98C3A;
+}
+
+#tarifs table thead th {
+    font-size: 16px;
+}
+
+#tarifs table th {
+    width: 288px;
+}
+
+#tarifs table th.first {
+    width: 224px;
+}
+
+#tarifs table td {
+    font-size: 16px;
+}
+
+#tarifs table th.periode {
+    width: 170px;
+}
+
+#tarifs table th.mois {
+    width: 140px;
+}
+
+#tarifs table td.first {
+    font-weight: bold;
+}
