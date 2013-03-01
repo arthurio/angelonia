@@ -1,1 +1,1 @@
-web: python manage.py runserver 0.0.0.0
+web: cd angeliona && python manage.py runserver 0.0.0.0
