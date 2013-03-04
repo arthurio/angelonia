@@ -1,4 +1,4 @@
-from angelia.settings import *
+from angelionia.settings import *
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
