@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
 from django.shortcuts import render_to_response
 from django.template import RequestContext
-from django.core.mail import EmailMessage
+from django.core.mail import EmailMultiAlternatives
 from django.conf import settings
 from angelionia.chalet.forms import ContactForm
 from angelionia.chalet.utils import JsonResponse
@@ -22,7 +23,9 @@ def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            email = EmailMessage('Reservation', 'test', to=[settings.EMAIL_HOST_USER])
+            text_content, html_content = form.build_response()
+            email = EmailMultiAlternatives('Réservation', text_content, to=[settings.EMAIL_HOST_USER])
+            email.attach_alternative(html_content, "text/html")
             email.send();
             return JsonResponse({}, status=True)
         else:
