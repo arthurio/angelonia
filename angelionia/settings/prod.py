@@ -1,14 +1,7 @@
-from settings import *
+from angelionia.settings import *
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
-
-STATICFILES_DIRS = (
-        'angelionia/static/',
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-)
 
 # Parse database configuration from $DATABASE_URL
 import dj_database_url

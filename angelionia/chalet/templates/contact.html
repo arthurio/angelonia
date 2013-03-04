@@ -6,6 +6,7 @@
     <p>Nous vous donnerons ensuite de plus amples précisions.</p>
     <div class="form">
         <form name="contact" method="POST" action="/contact">
+            {% csrf_token %}
             <ul>
                 <li class="float label">Prénom<div class="asterisk">*</div></li>
                 <li class="float-right input">

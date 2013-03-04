@@ -121,4 +121,21 @@ $(document).ready(function () {
     });
     $('.datepicker[name=end_date]').val($('.datepicker[name=end_date]').datepicker( "getDate" ));
 
+    $('form[name=contact]').submit(function () {
+        $.ajax({
+            cache: false,
+            type: $(this).attr('method'),
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            success: function (response) {
+                if (response.status) {
+                    alert('ok');
+                } else {
+                    alert('not ok');
+                }
+            }
+        });
+        return false;
+    });
+
 });
