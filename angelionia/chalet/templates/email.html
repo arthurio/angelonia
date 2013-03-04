@@ -1,54 +1,31 @@
 <html>
 <head>
-    <style>
-        .clear{
-            clear: both
-        }
-        ul {
-            padding: 0;
-            list-style: none;
-        }
-        .float-right {
-            float: right;
-        }
-
-        .float {
-            float: left;
-        }
-        li.separator.border {
-            border-top: 2px solid #B98C3A;
-            margin: 15px 0;
-        }
-    </style>
 </head>
 <body>
-<ul>
-    <li class="float label">Prénom</li>
-    <li class="float-right">{{ first_name }}</li>
-    <li class="clear separator"></li>
-    <li class="float label">Nom</li>
-    <li class="float-right">{{ last_name }}</li>
-    <li class="clear separator"></li>
-    <li class="float label">Courriel</li>
-    <li class="float-right">{{ email }}</li>
-    <li class="clear separator"></li>
-    <li class="float label">Téléphone</li>
-    <li class="float-right">{{ phone }}</li>
-    <li class="clear separator"></li>
-    <li class="float label">Dates désirées</li>
-    <li class="float-right input date">
-        Du: {{ start_date|date:"d/m/Y" }} au {{ end_date|date:"d/m/Y" }}
-    </li>
-    <li class="clear separator"></li>
-    <li class="float label">Nombre de personnes</li>
-    <li class="float-right">{{ people_number }}</li>
-    <li class="clear separator"></li>
-    <li class="float label">Meilleures heures d'appel</li>
-    <li class="float-right">{{ calling_hours }}</li>
-    <li class="clear separator"></li>
-    <li class="clear separator border"></li>
-    <li class="clear">Message</li>
-    <li class="float-right">{{ message }}</li>
+<ul style="padding: 0; list-style: none;">
+    <li style="float: left; padding: 7px 0; height: 26px;">Prénom</li>
+    <li style="float: right;">{{ first_name }}</li>
+    <li style="clear: both;"></li>
+    <li style="float: left; padding: 7px 0; height: 26px;">Nom</li>
+    <li style="float: right;">{{ last_name }}</li>
+    <li style="clear: both;"></li>
+    <li style="float: left; padding: 7px 0; height: 26px;">Courriel</li>
+    <li style="float: right;">{{ email }}</li>
+    <li style="clear: both;"></li>
+    <li style="float: left; padding: 7px 0; height: 26px;">Téléphone</li>
+    <li style="float: right;">{{ phone }}</li>
+    <li style="clear: both;"></li>
+    <li style="float: left; padding: 7px 0; height: 26px;">Dates désirées</li>
+    <li style="float: right;">Du: {{ start_date|date:"d/m/Y" }} au {{ end_date|date:"d/m/Y" }}</li>
+    <li style="clear: both;"></li>
+    <li style="float: left; padding: 7px 0; height: 26px;">Nombre de personnes</li>
+    <li style="float: right;">{{ people_number }}</li>
+    <li style="clear: both;"></li>
+    <li style="float: left; padding: 7px 0; height: 26px;">Meilleures heures d'appel</li>
+    <li style="float: right;">{{ calling_hours }}</li>
+    <li style="clear: both; border-top: 2px solid #B98C3A; margin: 15px 0;"></li>
+    <li style="clear: both;">Message</li>
+    <li style="float: left; padding: 7px 0;">{{ message }}</li>
 </ul>
 </body>
 </html>
