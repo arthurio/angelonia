@@ -446,7 +446,8 @@ div.footer .inner-right {
     width: 50%;
     position: absolute;
     right: 0;
-    height: 100%;
+    top: -40px;
+    height: 400px;
 }
 
 div.footer #map_canvas {
@@ -478,6 +479,10 @@ div.footer ul.address img {
 div.footer .copyright {
     float: left;
     position: relative;
+}
+
+.gmnoprint {
+    bottom: 60px !important;
 }
 
 div.footer ul.copyright {
