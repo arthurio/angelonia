@@ -460,6 +460,21 @@ div.footer ul.address {
     top: 40px;
 }
 
+div.footer ul.address li div {
+    display: inline;
+}
+
+div.footer ul.address li.clear {
+    margin-top: 5px;
+}
+
+div.footer ul.address img {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
 div.footer .copyright {
     float: left;
     position: relative;
