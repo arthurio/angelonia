@@ -237,13 +237,13 @@ table tr:hover td {
 
 #banner {
     color: #FFF;
-    position: fixed;
+    position: absolute;
     padding: 0;
     margin: 0;
     height: 100px;
     width: 100%;
     top: 0;
-    min-width: 980px;
+    min-width: 1040px;
     z-index: 2;
 }
 
@@ -259,6 +259,22 @@ table tr:hover td {
     background: url(../images/textures/banner-bg.png) repeat scroll 0 0;
     height: 80px;
     padding: 10px 0 10px 10px;
+}
+
+#banner .inner.sticky {
+    position: fixed;
+    top: -80px;
+    height: auto;
+}
+
+#banner .inner.animate-sticky {
+    top: 0;
+    -webkit-transition-property: top;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: top;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: ease;
 }
 
 /* NAV */

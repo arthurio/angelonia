@@ -155,4 +155,47 @@ $(document).ready(function () {
         return false;
     });
 
+    // TOP MENU BAR
+    var sticky = $('#banner .inner'),
+        origOffsetY = sticky.offset().top,
+        origWidth = sticky.width();
+
+    function resizeWidth() {
+        var margin = ((document.body.offsetWidth - origWidth) / 2) - 5;
+        if (margin <= 0) {
+            sticky.css('margin-left', 0);
+            sticky.css('width', '100%');
+        } else {
+            sticky.css('margin-left',  margin + 'px');
+        }
+    }
+
+    function onScroll(e) {
+        if (window.scrollY >= origOffsetY + sticky.height()) {
+            if (!sticky.hasClass('sticky')) {
+                resizeWidth();
+            }
+            sticky.addClass('sticky');
+            window.setTimeout(function () {
+                sticky.addClass("animate-sticky");
+            }, 1);
+        }
+        if (window.scrollY < origOffsetY) {
+            sticky.css('margin-left', 'auto');
+            sticky.css('width', origWidth + 'px');
+            sticky.removeClass("sticky").removeClass("animate-sticky");
+        }
+    }
+
+    $(window).resize(function () {
+        if (window.scrollY >= origOffsetY + sticky.height()) {
+            resizeWidth();
+        }
+    });
+    if (document.addEventListener) {
+        document.addEventListener('scroll', onScroll);
+    } else {
+        window.attachEvent('onscroll', onScroll);
+    }
+
 });
