@@ -17,6 +17,7 @@
   <script type="text/javascript" src="{{ STATIC_URL }}js/slider.js"></script>
   <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.8.18.custom.min.js"></script>
   <script type="text/javascript" src="{{ STATIC_URL }}js/application.js"></script>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 </head>
 <body class="font-open-sans">
 
@@ -44,12 +45,23 @@
                     {% endblock content %}
                 </div>
                 <div class="footer font-lato">
-                    <ul>
-                        <li class="float">&copy;</li>
-                        <li class="float">2012</li>
-                        <li class="float">-</li>
-                        <li class="float"><a href="http://www.arthur-rio.fr" target="_blank">Arthur Rio</a></li>
-                    </ul>
+                    <div class="inner-left">
+                        <ul class="address">
+                            <li><h2>Adresse:</h2></li>
+                            <li>Au pays du Père Noel</li>
+                            <li>Québec</li>
+                            <li>Canada</li>
+                        </ul>
+                        <ul class="copyright">
+                            <li class="float">&copy;</li>
+                            <li class="float">2012</li>
+                            <li class="float">-</li>
+                            <li class="float"><a href="http://www.arthur-rio.fr" target="_blank">Arthur Rio</a></li>
+                        </ul>
+                    </div>
+                    <div class="inner-right">
+                        <div id="map_canvas"></div>
+                    </div>
                 </div>
             </div>
         </div>

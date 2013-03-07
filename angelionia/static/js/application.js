@@ -63,6 +63,23 @@ Date.prototype.frenchFormat = function () {
     return leadingZero(curr_date) + "/" + leadingZero(curr_month) + "/" + curr_year;
 };
 
+
+function initializeMap() {
+    var b = new google.maps.LatLng(37.449955, -122.161338);
+    var c = {zoom: 15,center: b,scrollwheel: false,disableDefaultUI: true,zoomControl: true,zoomControlOptions: {position: google.maps.ControlPosition.RIGHT_CENTER},mapTypeId: google.maps.MapTypeId.ROADMAP};
+    var d = new google.maps.Map(document.getElementById("map_canvas"), c);
+    var a = new google.maps.Marker({position: b, map: d ,title: "Chalet Angelionia"});
+}
+
+function loadMap() {
+    var a = document.createElement("script");
+    a.type = "text/javascript";
+    a.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyBHqogVLcYQoFI3MZP45Ton2R7l2x2RH28&sensor=false&callback=initializeMap";
+    document.body.appendChild(a);
+}
+
+window.onload = loadMap;
+
 $(document).ready(function () {
 
     var path_name = document.location.pathname.replace('/','');

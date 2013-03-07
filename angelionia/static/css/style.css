@@ -426,17 +426,50 @@ table tr:hover td {
 div.footer {
     margin-top: 50px;
     color: #FFF;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+}
+
+div.footer .inner-left {
+    width: 60%;
+    height: 400px;
+    margin-top: -50px;
+    position: absolute;
+    left: 0;
     background: url(../images/textures/banner-bg.png) repeat scroll 0 0;
-    overflow: hidden;
+    z-index: 1;
+    border-radius: 0 200px 200px 0;
 }
 
-div.footer ul {
-    overflow: hidden;
-    margin: 10px auto;
-    width: 200px;
+div.footer .inner-right {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 100%;
 }
 
-div.footer ul li {
+div.footer #map_canvas {
+    height: 100%;
+    width: 100%;
+}
+
+div.footer ul.address {
+    position: absolute;
+    left: 150px;
+    top: 40px;
+}
+
+div.footer ul.address h2 {
+}
+
+div.footer ul.copyright {
+    position: absolute;
+    left: 140px;
+    bottom: 40px;
+}
+
+div.footer ul.copyright li {
     margin-left: 10px;
 }
 
