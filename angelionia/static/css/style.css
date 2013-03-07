@@ -460,17 +460,29 @@ div.footer ul.address {
     top: 40px;
 }
 
-div.footer ul.address h2 {
+div.footer .copyright {
+    float: left;
+    position: relative;
 }
 
 div.footer ul.copyright {
     position: absolute;
-    left: 140px;
+    font-size: 17px;
+    writing-mode: tb-rl;
+    -webkit-transform: matrix(0,1,-1,0,-60,-75);
+    -moz-transform: matrix(0,1,-1,0,-60,-75);
+    -ms-transform: matrix(0,1,-1,0,-60,-75);
+    -o-transform: matrix(0,1,-1,0,-60,-75);
+    transform: matrix(0,1,-1,0,-60,-75);
     bottom: 40px;
 }
 
+div.footer ul:nth-child(2) {
+	writing-mode: lr-tb;
+}
+
 div.footer ul.copyright li {
-    margin-left: 10px;
+    margin-left: 7px;
 }
 
 div.footer a:hover {
