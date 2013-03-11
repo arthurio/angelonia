@@ -4,9 +4,11 @@ from django.conf.urls import patterns, url
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('angelionia.chalet.views',
+urlpatterns = patterns('angelionia.views',
     (r'^$', 'home'),
+    (r'^home$', 'home'),
     (r'^gallery$', 'gallery'),
+    (r'^neighborhood$', 'neighborhood'),
     (r'^pricing$', 'pricing'),
     url(r'^contact$', 'contact', name='contact'),
 )

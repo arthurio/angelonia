@@ -10,19 +10,19 @@
             <ul>
                 <li class="float label">Prénom<div class="asterisk">*</div></li>
                 <li class="float-right input">
-                    <img src="/assets/icons/icon-error.png" name="first_name" class="error float" style="display: none;"/>
+                    <img src="{{ STATIC_URL }}images/icons/icon-error.png" name="first_name" class="error float" style="display: none;"/>
                     <input type="text" name="first_name" placeholder="Prénom"/>
                 </li>
                 <li class="clear separator"></li>
                 <li class="float label">Nom<div class="asterisk">*</div></li>
                 <li class="float-right input">
-                    <img src="/assets/icons/icon-error.png" name="last_name" class="error float" style="display: none;"/>
+                    <img src="{{ STATIC_URL }}images/icons/icon-error.png" name="last_name" class="error float" style="display: none;"/>
                     <input type="text" name="last_name" placeholder="Nom"/>
                 </li>
                 <li class="clear separator"></li>
                 <li class="float label">Courriel<div class="asterisk">*</div></li>
                 <li class="float-right input">
-                    <img src="/assets/icons/icon-error.png" name="email" class="error float" style="display: none;"/>
+                    <img src="{{ STATIC_URL }}images/icons/icon-error.png" name="email" class="error float" style="display: none;"/>
                     <input type="text" name="email" placeholder="Courriel"/>
                 </li>
                 <li class="clear separator"></li>
@@ -31,14 +31,14 @@
                 <li class="clear separator"></li>
                 <li class="float label">Dates désirées<div class="asterisk">*</div></li>
                 <li class="float-right input date">
-                    <img src="/assets/icons/icon-error.png" name="date" class="error float" style="display: none;"/>
+                    <img src="{{ STATIC_URL }}images/icons/icon-error.png" name="date" class="error float" style="display: none;"/>
                     <input type="text" class="datepicker end-date" name="end_date" readonly="readonly" placeholder="Fin"/>
                     <input type="text" class="datepicker start-date" name="start_date" readonly="readonly" placeholder="Début"/>
                 </li>
                 <li class="clear separator"></li>
                 <li class="float label">Nombre de personnes<div class="asterisk">*</div></li>
                 <li class="float-right input">
-                    <img src="/assets/icons/icon-error.png" name="people_number" class="error float" style="display: none;"/>
+                    <img src="{{ STATIC_URL }}images/icons/icon-error.png" name="people_number" class="error float" style="display: none;"/>
                     <input type="text" name="people_number" placeholder="e.g. 5"/>
                 </li>
                 <li class="clear separator"></li>
@@ -54,3 +54,7 @@
     </div>
 </div>
 {% endblock content %}
+
+{% block bottom_js_include %}
+    {% include 'contact.js' %}
+{% endblock bottom_js_include %}
