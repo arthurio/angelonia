@@ -2,9 +2,7 @@
 {% block content %}
 <div id="contact">
     <h1>Nous contacter</h1>
-    <p>À la lecture de votre message nous vous contacterons dans les plus brefs délais.</p>
-    <p>Nous vous donnerons ensuite de plus amples précisions.</p>
-    <div class="form yellow">
+    <div class="form">
         <form name="contact" method="POST" action="/contact">
             {% csrf_token %}
             <ul>
@@ -52,6 +50,7 @@
             </ul>
         </form>
     </div>
+    <div class="paragraph full">À la lecture de votre message nous vous contacterons dans les plus brefs délais.<br/>Nous vous donnerons ensuite de plus amples précisions.</div>
 </div>
 {% endblock content %}
 

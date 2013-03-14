@@ -447,6 +447,11 @@ table tr:hover td {
     background: #E8DFCF;
 }
 
+#contact .paragraph.full {
+    width: 620px;
+    margin: 20px auto;
+}
+
 #contact img.error {
     margin: 9px;
 }
@@ -611,7 +616,7 @@ td.br {
     width: 800px;
 }
 
-#pricing .form {
+.paragraph {
     color: white;
     width: 350px;
     border-radius: 5px;
@@ -620,15 +625,17 @@ td.br {
     background: url(../images/textures/banner-bg.png) repeat scroll 0 0;
 }
 
+.paragraph.full {
+    width: 774px;
+    padding: 20px 10px;
+}
+
 #pricing .dates ul {
     padding: 0 0 0 40px;
     list-style: square;
 }
 
-#pricing .dates .form.note {
-    width: 774px;
-    padding: 20px 10px;
-}
+
 
 /* GALLERIA */
 .galleria {

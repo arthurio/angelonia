@@ -3,8 +3,8 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.core.mail import EmailMultiAlternatives
 from django.conf import settings
-from angelionia.forms import ContactForm
-from angelionia.utils import JsonResponse
+from angelonia.forms import ContactForm
+from angelonia.utils import JsonResponse
 
 def home(request):
     payload = {}
