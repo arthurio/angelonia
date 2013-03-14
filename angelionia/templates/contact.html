@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
 <div id="contact">
-    <h1>Contacter l'annonceur</h1>
-    <p>A la lecture de votre message nous vous contacterons dans les plus brefs délais.</p>
+    <h1>Nous contacter</h1>
+    <p>À la lecture de votre message nous vous contacterons dans les plus brefs délais.</p>
     <p>Nous vous donnerons ensuite de plus amples précisions.</p>
-    <div class="form">
+    <div class="form yellow">
         <form name="contact" method="POST" action="/contact">
             {% csrf_token %}
             <ul>

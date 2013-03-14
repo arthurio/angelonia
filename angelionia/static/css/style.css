@@ -217,6 +217,11 @@ table tr:hover td {
     font-weight: 400;
 }
 
+.font-open-sans h1 {
+    font-size: 3em;
+    line-height: 1em;
+}
+
 /* BANNER */
 
 #banner {
@@ -436,9 +441,9 @@ table tr:hover td {
 #contact .form {
     width: 600px;
     margin: 10px auto;
-    border: 2px solid #B98C3A;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px 20px;
+    border: 2px solid #B98C3A;
     background: #E8DFCF;
 }
 
@@ -551,6 +556,22 @@ td.bs {
     color: #B98C3A;
 }
 
+th.tl {
+    border-radius: 5px 0 0 0;
+}
+
+th.tr {
+    border-radius: 0 5px 0 0;
+}
+
+td.bl {
+    border-radius: 0 0 0 5px;
+}
+
+td.br {
+    border-radius: 0 0 5px 0;
+}
+
 #pricing table thead th {
     font-size: 16px;
 }
@@ -577,6 +598,36 @@ td.bs {
 
 #pricing table td.first {
     font-weight: bold;
+}
+
+#pricing table tr.last {
+    border-bottom: none;
+}
+
+#pricing .dates {
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+    width: 800px;
+}
+
+#pricing .form {
+    color: white;
+    width: 350px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 3px solid #B98C3A;
+    background: url(../images/textures/banner-bg.png) repeat scroll 0 0;
+}
+
+#pricing .dates ul {
+    padding: 0 0 0 40px;
+    list-style: square;
+}
+
+#pricing .dates .form.note {
+    width: 774px;
+    padding: 20px 10px;
 }
 
 /* GALLERIA */

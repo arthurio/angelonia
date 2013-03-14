@@ -6,9 +6,9 @@
         <table class="hs_bs">
             <thead>
                 <tr>
-                    <th class="first">Mois</th>
+                    <th class="first tl">Mois</th>
                     <th>Du 1 au 15</th>
-                    <th>Du 16 au 30/31</th>
+                    <th class="tr">Du 16 au 30/31</th>
                 </tr>
             </thead>
             <tbody>
@@ -68,38 +68,42 @@
                     <td class="bs">Basse saison</td>
                 </tr>
                 <tr>
-                    <td class="first">Décembre</td>
+                    <td class="first bl">Décembre</td>
                     <td class="bs">Basse saison</td>
-                    <td class="hs">Haute saison</td>
+                    <td class="hs br">Haute saison</td>
                 </tr>
             </tbody>
         </table>
     </div>
-
-    <div>
-        <h3>Attention</h3>
-        <ul>
-            <li>la période de Noël, Nouvel an se loue minimum 5 jours</li>
-            <li>les journées fériées et les jours de relâche sont au prix de haute saison</li>
-        </ul>
-        <p>Ces prix comportent la fourniture des linges de maison, de toilette, la literie. Pour faciliter le début de votre séjour nous vous fournissons du papier WC, des produits d'entretien, de la lessive.</p>
-        <h3>Politique de paiement de préférence en dollars canadiens</h3>
-        <ul>
-            <li>acompte de 30% à la réservation</li>
-            <li>solde à l'arrivée</li>
-            <li>dépôt de 300 dollars à l'arrivée restitué, en l 'absence de bris, dans les jours suivants la sortie</li>
-        </ul>
+    
+    <div class="dates">
+        <div class="form float">
+            <h3>Attention</h3>
+            <ul>
+                <li>la période de Noël, Nouvel an se loue minimum 5 jours</li>
+                <li>les journées fériées et les jours de relâche sont au prix de haute saison</li>
+            </ul>
+            <p>Ces prix comportent la fourniture des linges de maison, de toilette, la literie.<br/>Pour faciliter le début de votre séjour nous vous fournissons du papier WC, des produits d'entretien, de la lessive.</p>
+        </div>
+        <div class="form float-right">
+            <h3>Politique de paiement de préférence en dollars canadiens</h3>
+            <ul>
+                <li>acompte de 30% à la réservation</li>
+                <li>solde à l'arrivée</li>
+                <li>dépôt de 300 dollars à l'arrivée restitué, en l 'absence de bris, dans les jours suivants la sortie</li>
+            </ul>
+        </div>
     </div>
     <div>
         <h1>Tarifs de location</h1>
         <table>
             <thead>
                 <tr>
-                    <th class="periode">Période</th>
+                    <th class="periode tl">Période</th>
                     <th class="center">Fin de semaine</th>
                     <th class="center">Semaine (5 jours)</th>
                     <th class="center">Semaine (7 jours)</th>
-                    <th class="mois center">Mois</th>
+                    <th class="mois center tr">Mois</th>
                 </tr>
             </thead>
             <tbody>
@@ -118,16 +122,18 @@
                     <td class="center">3200 CAD</td>
                 </tr>
                 <tr>
-                    <td class="first">Noël/Nouvel an</td>
+                    <td class="first bl">Noël/Nouvel an</td>
                     <td class="center">-</td>
                     <td class="center">1070 CAD</td>
                     <td class="center">-</td>
-                    <td class="center">-</td>
+                    <td class="center br">-</td>
                 </tr>
             </tbody>
         </table>
 
-        <p>Heure d'arrivée: 15H/ Heure de départ 11H avec une certaine souplesse au cas où le chalet serait libre.</p>
+        <div class="dates">
+            <div class="form note">Heure d'arrivée: 15H/ Heure de départ 11H avec une certaine souplesse au cas où le chalet serait libre.</div>
+        </div>
     </div>
 </div>
 {% endblock content %}
