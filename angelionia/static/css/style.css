@@ -228,7 +228,7 @@ table tr:hover td {
     width: 100%;
     top: 0;
     min-width: 1040px;
-    z-index: 3;
+    z-index: 13;
 }
 
 #banner h1 {
@@ -259,6 +259,32 @@ table tr:hover td {
     -moz-transition-property: top;
     -moz-transition-duration: 1s;
     -moz-transition-timing-function: ease;
+}
+
+#description {
+    background: #B98C3A;
+    color: white;
+    overflow: hidden;
+}
+
+#description .inner {
+    margin: 20px 50px;
+    text-align: center;
+}
+
+#description .inner i {
+    font-size: 40px;
+    line-height: 24px;
+    margin-right: 10px;
+}
+
+#description .inner table td {
+    font-size: 26px;
+}
+
+#description table td {
+    background: none;
+    width: 350px;
 }
 
 /* NAV */
@@ -306,9 +332,8 @@ table tr:hover td {
 
 .midd {
     color: #000;
-    min-height: 735px;
     width: 980px;
-    padding: 120px 0 0 0;
+    padding: 100px 0 0 0;
     position: relative;
 }
 
@@ -321,52 +346,53 @@ table tr:hover td {
     margin-top: -120px;
 }
 
-.content {
-    padding: 0 20px;
-    min-height: 620px;
-}
-
-/* CAROUSSEL */
+/* HOME */
 
 #caroussel {
-    width: 925px;
     margin: auto;
 }
 
-/* Specific to slider.js */
-.slider, .slide {
-    width: 925px;
-    height: 275px;
-}
-.slider {
-    position: relative;
+#caroussel .slideshow {
     overflow: hidden;
-    height: 275px;
-}
-/* end here */
-
-#caroussel .slider a {
-    z-index: -2;
 }
 
-#caroussel .previous {
+#caroussel .slideshow .images {
+    height: 500px;
+}
+
+#caroussel .slideshow .images img {
+    height: 100%;
+    width: 100%;
+}
+
+#caroussel div.view-more {
     position: absolute;
-    left: 10px;
-    top: 10px;
+    width: 100%;
+    height: 100px;
+    background: url(../images/caroussel/info.png) repeat-x;
+    top: 400px;
+    z-index: 12;
 }
 
-#caroussel .next {
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
+#caroussel div.view-more a:hover {
+    background: #A87A26;
+    -webkit-transition: ease-in-out .4s;
+    -moz-transition: ease-in-out .4s;
+    -o-transition: ease-in-out .4s;
+    -ms-transition: ease-in-out .4s;
+    transition: ease-in-out .4s;
 }
 
-#caroussel .break {
-    position: absolute;
-    left: 10px;
-    top: 130px;
+#caroussel div.view-more a {
+    font-size: 20px;
+    color: #FFF;
+    background: #B98C3A;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin: 20px 45px 0 0;
 }
 
+/* END HOME */
 
 /* CONTACT */
 
@@ -424,16 +450,15 @@ table tr:hover td {
 /* FOOTER */
 
 div.footer {
-    margin-top: 50px;
     color: #FFF;
     overflow: hidden;
     position: relative;
-    height: 300px;
+    height: 275px;
 }
 
 div.footer .inner-left {
     width: 60%;
-    height: 400px;
+    height: 375px;
     margin-top: -50px;
     position: absolute;
     left: 0;
@@ -446,7 +471,7 @@ div.footer .inner-right {
     width: 50%;
     position: absolute;
     right: 0;
-    top: -40px;
+    top: -55px;
     height: 400px;
 }
 
@@ -458,7 +483,7 @@ div.footer #map_canvas {
 div.footer ul.address {
     position: absolute;
     left: 150px;
-    top: 40px;
+    top: 20px;
 }
 
 div.footer ul.address li div {
@@ -526,35 +551,40 @@ td.bs {
     color: #B98C3A;
 }
 
-#tarifs table thead th {
+#pricing table thead th {
     font-size: 16px;
 }
 
-#tarifs table th {
+#pricing table th {
     width: 288px;
 }
 
-#tarifs table th.first {
+#pricing table th.first {
     width: 224px;
 }
 
-#tarifs table td {
+#pricing table td {
     font-size: 16px;
 }
 
-#tarifs table th.periode {
+#pricing table th.periode {
     width: 170px;
 }
 
-#tarifs table th.mois {
+#pricing table th.mois {
     width: 140px;
 }
 
-#tarifs table td.first {
+#pricing table td.first {
     font-weight: bold;
 }
 
 /* GALLERIA */
 .galleria {
     height:400px;
+}
+
+/* CONTENT */
+#contact, #neighborhood, #gallery, #pricing {
+    margin: 0 20px;
 }
