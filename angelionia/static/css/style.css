@@ -607,7 +607,7 @@ td.br {
 #pricing .dates {
     position: relative;
     overflow: hidden;
-    margin: 10px auto;
+    margin: 10px auto 30px;
     width: 800px;
 }
 
