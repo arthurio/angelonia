@@ -76,5 +76,7 @@ $(document).ready(function () {
         });
         return false;
     });
+
+    $('input, textarea').placeholder();
 });
 
