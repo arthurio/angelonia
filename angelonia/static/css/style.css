@@ -61,7 +61,7 @@ a {
 
 
 .paragraph {
-    color: white;
+    color: #FFF;
     width: 350px;
     border-radius: 5px;
     padding: 10px 20px;
@@ -198,6 +198,7 @@ table th, table td {
 
 td.hs {
     color: #CD2626;
+    font-weight: bold;
 }
 
 td.bs {
@@ -384,7 +385,7 @@ table tr:hover td {
 }
 
 .midd {
-    color: #000;
+    color: #131313;
     width: 980px;
     padding: 100px 0 0 0;
     position: relative;
@@ -649,7 +650,9 @@ div.footer a:hover {
     list-style: square;
 }
 
-
+#pricing .dates .paragraph p {
+    margin: 0;
+}
 
 /* GALLERIA */
 .galleria {
