@@ -36,3 +36,6 @@ nosetests.xml
 
 .DS_Store
 *.DS_Store
+
+# prod settings
+angelonia/settings/prod.py
