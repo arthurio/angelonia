@@ -456,16 +456,19 @@ table tr:hover td {
 }
 
 #contact li.input {
-    width: 372px;
+    width: 370px;
 }
 
 #contact li input {
-    float: right;
-    width: 355px;
+    width: 356px;
 }
 
 #contact li input.start-date {
-    margin-right: 5px;
+    float: left;
+}
+
+#contact li input.end-date {
+    float: right;
 }
 
 #contact textarea {
