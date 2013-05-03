@@ -1,7 +1,8 @@
 
 function initializeMap() {
-    var b = new google.maps.LatLng(37.449955, -122.161338);
-    var c = {zoom: 15,center: b,scrollwheel: false,disableDefaultUI: true,zoomControl: true,zoomControlOptions: {position: google.maps.ControlPosition.RIGHT_CENTER},mapTypeId: google.maps.MapTypeId.ROADMAP};
+    //var b = new google.maps.LatLng(37.449955, -122.161338);
+    var b = new google.maps.LatLng(46.955652, -71.129608);
+    var c = {zoom: 10,center: b,scrollwheel: false,disableDefaultUI: true,zoomControl: true,zoomControlOptions: {position: google.maps.ControlPosition.RIGHT_CENTER},mapTypeId: google.maps.MapTypeId.ROADMAP};
     var d = new google.maps.Map(document.getElementById("map_canvas"), c);
     var a = new google.maps.Marker({position: b, map: d ,title: "Chalet Angelonia"});
 }
