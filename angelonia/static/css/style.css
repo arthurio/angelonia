@@ -262,11 +262,11 @@ table tr:hover td {
 }
 
 .font-lato {
-    font: 200 20px/24px "lato";
+    font: 400 20px/24px "lato";
 }
 
 .font-lato h1, .font-lato h2, .font-lato h3, .font-lato h4 {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .font-old-standard {
