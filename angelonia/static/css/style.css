@@ -39,6 +39,10 @@ a {
     color: #FFF;
 }
 
+h6 {
+    margin: 5px 0;
+}
+
 .float-right {
     float: right;
 }
@@ -72,6 +76,13 @@ a {
 .paragraph.full {
     width: 780px;
     padding: 20px 10px;
+    margin: auto;
+}
+
+.map img {
+    cursor: pointer;
+    cursor: -webkit-zoom-in; cursor: -moz-zoom-in;
+    width: 100%;
     margin: auto;
 }
 
@@ -682,20 +693,9 @@ div.footer a:hover {
     width: 250px;
 }
 
-#gallery .overview .map img {
-    cursor: pointer;
-    cursor: -webkit-zoom-in; cursor: -moz-zoom-in;
-    width: 100%;
-    margin: auto;
-}
-
 #gallery .overview .map img.terasse {
     margin: 0 35px;
     width: 180px;
-}
-
-#gallery h6 {
-    margin: 5px 0;
 }
 /* END GALLERY */
 
@@ -703,4 +703,14 @@ div.footer a:hover {
 #neighborhood .paragraph {
     text-align: justify;
 }
+
+#neighborhood .map {
+    width: 250px;
+    text-align: center;
+}
+
+#neighborhood .description {
+    width: 500px;
+}
+
 /* END NEIGHBORHOOD */
