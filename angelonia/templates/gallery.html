@@ -1,39 +1,52 @@
 {% extends 'base.html' %}
 {% block content %}
 <div id="gallery">
-    <h1>Chalet à louer Angelonia</h1>
-    <div class="paragraph full">
-        <p>Le chalet, de 2100 pc (environ 200 m2), comporte:</p>
-        <ol>
-            <li>Un rez de Chaussée:<br/>
-            s'ouvrant sur une grande surface ouverte rassemblant:
-                <ul>
-                    <li>Une cuisine entièrement équipée (cuisinière, réfrigérateur, congélateur, lave-vaisselle, micro-onde, et de nombreux ustensiles de cuisine)</li>
-                    <li>Une salle à manger</li>
-                    <li>Un salon avec pôele à bois</li>
-                    <li>Une grande chambre fermée avec lit Queen et placard</li>
-                    <li>Une salle de bains, douche et baignoire</li>
-                </ul>
-            </li>
-            <li>Un demi-sous-sol
-                <ul>
-                    <li>Trois grandes chambres fermées équipées chacunes de deux lits simples (twin-beds)</li>
-                    <li>Une pièce ouverte avec télévision</li>
-                    <li>Une salle de bains avec douche</li>
-                    <li>Un local équipé d'une laveuse, sécheuse et table à repasser avec fer</li>
-                    <li>Le téléphone pour appels locaux, internet et télévision sont à votre disposition.</li>
-                </ul>
-            </li>
-            <li>Une grande terrasse
-                <ul>
-                    <li>Avec tables, chaises et barbecue.</li>
-                    <li>Elle domine l'étang.</li>
-                </ul>
-            </li>
-        </ol>
+    <h1>Bienvenue au chalet Angelonia</h1>
+    <div class="paragraph full overview">
+        <h2>Un espace confortable de 2100pc (200m2) comprenant:</h2>
+        <div class="clearfix">
+            <h3>Un rez de Chaussée</h3>
+            <p class="clear">S'ouvrant sur une grande surface ouverte rassemblant:</p>
+            <div class="float map">
+                <img class="float" src="{{ STATIC_URL }}images/map/rez-de-chausse.jpg"/>
+                <h6>(Cliquer sur l'image pour voir la galerie photo)</h6>
+            </div>
+            <ul class="float-right">
+                <li>Une cuisine entièrement équipée (cuisinière, réfrigérateur, congélateur, lave-vaisselle, micro-onde, et de nombreux ustensiles de cuisine et de vaisselle)</li>
+                <li>Une salle à manger</li>
+                <li>Un salon avec poêle à bois et fauteuils relax</li>
+                <li>Une grande chambre fermée avec lit Queen et placard</li>
+                <li>Une salle de bains, douche et baignoire</li>
+            </ul>
+        </div>
+        <div class="clearfix">
+            <h3>Un demi-sous-sol</h3>
+            <div class="float map">
+                <img src="{{ STATIC_URL }}images/map/sous-sol.jpg"/>
+                <h6>(Cliquer sur l'image pour voir la galerie photo)</h6>
+            </div>
+            <ul class="float-right">
+                <li>Trois grandes chambres fermées équipées chacunes de deux lits simples (twin-beds)</li>
+                <li>Une pièce ouverte avec télévision</li>
+                <li>Une salle de bains avec douche</li>
+                <li>Un local équipé d'une laveuse, sécheuse et table à repasser avec fer</li>
+                <li>Le téléphone pour appels locaux, internet et télévision sont à votre disposition.</li>
+            </ul>
+        </div>
+        <div class="clearfix">
+            <h3>Une grande terrasse</h3>
+            <div class="float map">
+                <img class="float terasse" src="{{ STATIC_URL }}images/map/terrasse.jpg"/>
+                <h6>(Cliquer sur l'image pour voir la galerie photo)</h6>
+            </div>
+            <ul class="float-right">
+                <li>Avec tables, chaises et barbecue.</li>
+                <li>Elle domine l'étang.</li>
+            </ul>
+        </div>
     </div>
 
-    <h1>Les pièces</h1>
+    <!--<h1>Les pièces</h1>
     <div class="galleria" id="rooms">
         <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Biandintz_eta_zaldiak_-_modified2.jpg/800px-Biandintz_eta_zaldiak_-_modified2.jpg">
             <img 
@@ -183,7 +196,7 @@
                 data-description="Mendocino county, California, USA."
             >
         </a>
-    </div>
+    </div>-->
 </div>
 {% endblock content %}
 

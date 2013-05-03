@@ -669,6 +669,35 @@ div.footer a:hover {
 }
 /* END CONTENT */
 
+/* GALLERY */
+#gallery .paragraph {
+    text-align: justify;
+}
+
+#gallery .overview ul {
+    width: 500px;
+}
+
+#gallery .overview .map {
+    width: 250px;
+}
+
+#gallery .overview .map img {
+    cursor: pointer;
+    cursor: -webkit-zoom-in; cursor: -moz-zoom-in;
+    width: 100%;
+    margin: auto;
+}
+
+#gallery .overview .map img.terasse {
+    margin: 0 35px;
+    width: 180px;
+}
+
+#gallery h6 {
+    margin: 5px 0;
+}
+/* END GALLERY */
 
 /* NEIGHBORHOOD */
 #neighborhood .paragraph {
